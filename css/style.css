@@ -17,6 +17,9 @@ h3	{
 	display: grid;
 	padding: 5px;
 }
+.selection-box-selected {
+	background-color: green;
+}
 .selection-box h3 {
 	margin: auto;
 }
@@ -39,13 +42,20 @@ h3	{
 	border: 2px solid;
 	border-color: #ffffff;
 	border-radius: 25px;
-	width: 5.5em;
-	background-color: #333333
+	width: 5.65em;
+	height: 4em;
+	background-color: #333333;
+	display: grid;
+}
+.tv-size h3 {
+	margin: auto;
 }
 .hide {
 	display: none;
 }
-
+.active {
+	background-color: green;
+}
 /* Large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {

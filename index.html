@@ -9,30 +9,30 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div class="container-fluid">
-		<div class="row">
+	<div class="container">
+		<div class="row justify-content-center">
 			<div class="selection-group col-sm-4">
-				<div class="selection-box">
-					<h3 class="text-center">DTV</h3>
+				<div id="dtv" class="selection-box">
+					<h3>DTV</h3>
 				</div>
-				<div class="selection-box">
-					<h3 class="text-center">uVerse</h3>
+				<div id="uverse" class="selection-box">
+					<h3>uVerse</h3>
 				</div>
 			</div>
 			<div class="selection-group col-sm-4">
 				<div class="selection-box">
-					<h3 class="text-center">Include</h3>
-					<h3 class="text-center">Internet</h3>
+					<h3>Include</h3>
+					<h3>Internet</h3>
 				</div>
-				<div class="row">
+				<div class="row justify-content-center">
 					<div class="selection-box col-sm hide">
-						<h3 class="text-center">$30</h3>
+						<h3>$30</h3>
 					</div>
 					<div class="selection-box col-sm hide">
-						<h3 class="text-center">$50</h3>
+						<h3>$50</h3>
 					</div>
 					<div class="selection-box col-sm hide">
-						<h3 class="text-center">$70</h3>
+						<h3>$70</h3>
 					</div>
 				</div>
 
@@ -40,10 +40,10 @@
 			</div>
 			<div class="selection-group col-sm-4">
 				<div class="selection-box">
-					<h3 class="text-center">$15 Discount</h3>
+					<h3>$15 Discount</h3>
 				</div>
 				<div class="selection-box">
-					<h3 class="text-center">$5 Discount</h3>
+					<h3>$5 Discount</h3>
 				</div>
 			</div>
 		</div>
@@ -52,42 +52,61 @@
 			<div class="col-sm-12 text-center">
 				<h3># of TV's</h3>
 			</div>
-			<div class="row tv-count-group">
-				<div class="tv-size text-center col-sm">
+			<div class="row tv-count-group justify-content-center">
+				<div class="tv-size col-sm">
 					<h3>1</h3>
 				</div>
-				<div class="tv-size text-center col-sm">
+				<div class="tv-size col-sm">
 					<h3>2</h3>
 				</div>
-				<div class="tv-size text-center col-sm">
+				<div class="tv-size col-sm">
 					<h3>3</h3>
 				</div>
-				<div class="tv-size text-center col-sm">
+				<div class="tv-size col-sm">
 					<h3>4</h3>
 				</div>
-				<div class="tv-size text-center col-sm">
+				<div class="tv-size col-sm">
 					<h3>5</h3>
 				</div>
-				<div class="tv-size text-center col-sm">
+				<div class="tv-size col-sm">
 					<h3>6</h3>
 				</div>
-				<div class="tv-size text-center col-sm">
+				<div class="tv-size col-sm">
 					<h3>7</h3>
 				</div>
-				<div class="tv-size text-center col-sm">
+				<div class="tv-size col-sm">
 					<h3>8</h3>
 				</div>
 			</div>
 		</div>
-
+		<div class="row justify-content-center">
+			<div id="select" class="selection-box col-sm-4">
+				<h3>Select</h3>
+			</div>
+			<div id="entertainment" class="selection-box col-sm-4">
+				<h3>Entertainment</h3>
+			</div>
+			<div id="choice" class="selection-box col-sm-4">
+				<h3>Choice</h3>
+			</div>
+			<div id="choice" class="selection-box col-sm-4">
+				<h3>Xtra</h3>
+			</div>
+			<div id="ultimate" class="selection-box col-sm-4">
+				<h3>Ultimate</h3>
+			</div>
+			<div id="premier" class="selection-box col-sm-4">
+				<h3>Premier</h3>
+			</div>
+		</div>
 		<div class="row justify-content-center">
 	    <div class="month-total col-5">
 	      <h1>Month's 1-12</h1>
-	      <h1>$0</h1>
+	      <h1 id="promoPrice">$0</h1>
 	    </div>
 	    <div class="month-total col-5">
 				<h1>Month's 13+</h1>
-	      <h1>$0</h1>
+	      <h1 id="basePrice">$0</h1>
 	    </div>
 		</div>
 	</div>
