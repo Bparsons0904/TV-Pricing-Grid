@@ -5,12 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="TV Pricing Calculator.">
 	<title>TV Pricing Calculator</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="selection-group col-sm-4">
 				<div class="selection-box">
@@ -22,40 +21,81 @@
 			</div>
 			<div class="selection-group col-sm-4">
 				<div class="selection-box">
-					<h3 class="text-center">Include upto 50mb Internet</h3>
+					<h3 class="text-center">Include</h3>
+					<h3 class="text-center">Internet</h3>
 				</div>
+				<div class="row">
+					<div class="selection-box col-sm hide">
+						<h3 class="text-center">$30</h3>
+					</div>
+					<div class="selection-box col-sm hide">
+						<h3 class="text-center">$50</h3>
+					</div>
+					<div class="selection-box col-sm hide">
+						<h3 class="text-center">$70</h3>
+					</div>
+				</div>
+
+
 			</div>
 			<div class="selection-group col-sm-4">
 				<div class="selection-box">
-					<h3 class="text-center">Include $15 Unlimited Discount</h3>
+					<h3 class="text-center">$15 Discount</h3>
 				</div>
 				<div class="selection-box">
-					<h3 class="text-center">Include $5 Autopay Discount</h3>
+					<h3 class="text-center">$5 Discount</h3>
 				</div>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="tv-count-group pagination-centered">
-				<h3 class="tv-size text-center col-sm-1">1</h3>
-				<h3 class="tv-size text-center col-sm-1">2</h3>
-				<h3 class="tv-size text-center col-sm-1">3</h3>
-				<h3 class="tv-size text-center col-sm-1">4</h3>
-				<h3 class="tv-size text-center col-sm-1">5</h3>
-				<h3 class="tv-size text-center col-sm-1">6</h3>
-				<h3 class="tv-size text-center col-sm-1">7</h3>
-				<h3 class="tv-size text-center col-sm-1">8</h3>
+		<div class="row justify-content-center">
+			<div class="col-sm-12 text-center">
+				<h3># of TV's</h3>
 			</div>
-
+			<div class="row tv-count-group">
+				<div class="tv-size text-center col-sm">
+					<h3>1</h3>
+				</div>
+				<div class="tv-size text-center col-sm">
+					<h3>2</h3>
+				</div>
+				<div class="tv-size text-center col-sm">
+					<h3>3</h3>
+				</div>
+				<div class="tv-size text-center col-sm">
+					<h3>4</h3>
+				</div>
+				<div class="tv-size text-center col-sm">
+					<h3>5</h3>
+				</div>
+				<div class="tv-size text-center col-sm">
+					<h3>6</h3>
+				</div>
+				<div class="tv-size text-center col-sm">
+					<h3>7</h3>
+				</div>
+				<div class="tv-size text-center col-sm">
+					<h3>8</h3>
+				</div>
+			</div>
 		</div>
 
-
+		<div class="row justify-content-center">
+	    <div class="month-total col-5">
+	      <h1>Month's 1-12</h1>
+	      <h1>$0</h1>
+	    </div>
+	    <div class="month-total col-5">
+				<h1>Month's 13+</h1>
+	      <h1>$0</h1>
+	    </div>
+		</div>
 	</div>
-	<script src="js/jquery-3.2.1.min.js">
-	</script>
-	<script src="js/bootstrap.min.js">
-	</script>
-	<script src="js/script.js">
-	</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<!-- <script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script> -->
+	<script src="js/script.js"></script>
 </body>
 </html>
