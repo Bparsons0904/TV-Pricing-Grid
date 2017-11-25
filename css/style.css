@@ -2,34 +2,28 @@ body {
 	margin: 0;
 	padding-top: 25px;
 	width: 100%;
-	background-color: #dddddd;
+	background-color: #eeeeee;
 	color: #2222ee;
 }
 h3	{
 	font-weight: bold;
 }
 .selection-box {
-	border: 2px solid;
-	border-color: #ffffff;
-	border-radius: 25px;
-	background-color: #333333;
+	border-radius: 10px;
+	background-color: #222222;
 	height: 7.5em;
 	display: grid;
 	padding: 5px;
-}
-.selection-box-selected {
-	background-color: green;
+	margin-top: 10px;
 }
 .selection-box h3 {
 	margin: auto;
 }
 .month-total {
 	margin-top: 100px;
-	margin: 25px;
-	border: 2px solid;
-	border-color: #ffffff;
-	border-radius: 25px;
-	background-color: #333333;
+	margin: 15px;
+	border-radius: 15px;
+	background-color: #222222;
 	height: 10em;
 	display: grid;
 	padding: 5px;
@@ -39,22 +33,34 @@ h3	{
 	font-weight: bolder;
 }
 .tv-size {
-	border: 2px solid;
-	border-color: #ffffff;
-	border-radius: 25px;
-	width: 5.65em;
+	border-radius: 15px;
 	height: 4em;
-	background-color: #333333;
+	background-color: #222222;
 	display: grid;
+	margin: 5px;
+	width: 100px;
 }
 .tv-size h3 {
 	margin: auto;
+}
+.tv-count-group {
+	/*width: 80%;*/
 }
 .hide {
 	display: none;
 }
 .active {
-	background-color: green;
+	background-color: #2222ee;
+	color: #222222
+}
+.pricing {
+	margin-top: 20px;
+}
+#dtvPrograms {
+	margin-top: 10px;
+}
+#uversePrograms {
+	margin-top: 10px;
 }
 /* Large devices (large desktops, 1200px and up) */
 
