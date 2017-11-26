@@ -3,6 +3,7 @@ body {
 	width: 100%;
 	background-color: #000000;
 	color: #ffffff;
+	font-family: 'Quicksand', sans-serif;
 }
 #clear {
 	background-color: #ffffff;
@@ -13,7 +14,6 @@ body {
 .tv-option {
 	border-radius: 10px;
 	background-color: #00a6d6;
-	display: grid;
 	padding: 0px;
 	height: 100px;
 	margin-bottom: 15px;
@@ -22,13 +22,26 @@ body {
 	color: #ffffff;
 	font-size: 30px;
 	font-weight: bold;
+	text-align: center;
+	padding-top: 25px;
+}
+.internet-price {
+	border-radius: 10px;
+	background-color: #00a6d6;
+	height: 100px;
+	margin-bottom: 15px;
+}
+.internet-price p {
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
 	margin: auto;
 }
 .discount {
 	border-radius: 10px;
 	background-color: #00a6d6;
 	margin-top: 15px;
-	display: grid;
 	height: 100px;
 	margin: 5px;
 	margin-right: 10px;
@@ -39,6 +52,7 @@ body {
 	font-size: 30px;
 	font-weight: bold;
 	margin: auto;
+	text-align: center;
 }
 .month-total {
 	margin-top: 15px;
@@ -46,18 +60,17 @@ body {
 	border-radius: 15px;
 	background-color: #00629b;
 	height: 100px;
-	display: grid;
 }
 .month-total p {
 	margin: auto;
 	font-weight: bolder;
 	font-size: 30px;
+	text-align: center;
 }
 .tv-size {
 	border-radius: 15px;
 	height: 75px;
 	background-color: #00a6d6;
-	display: grid;
 	width: 75px;
 	margin: 6px;
 	margin-bottom: 15px;
@@ -65,14 +78,15 @@ body {
 }
 .tv-size p {
 	margin: auto;
+	padding-top: 15px;
 	font-weight: bolder;
 	font-size: 30px;
+	text-align: center;
 }
 .include-internet {
 	border-radius: 15px;
 	height: 75px;
 	background-color: #00a6d6;
-	display: grid;
 	width: 75px;
 	margin: 10px;
 }
@@ -80,6 +94,8 @@ body {
 	margin: auto;
 	font-weight: bolder;
 	font-size: 30px;
+	text-align: center;
+	padding-top: 10px;
 }
 .hide {
 	display: none;
