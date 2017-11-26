@@ -1,57 +1,91 @@
 body {
 	margin: 0;
-	padding-top: 25px;
 	width: 100%;
-	background-color: #eeeeee;
-	color: #2222ee;
+	background-color: #000000;
+	color: #ffffff;
 }
-h3	{
-	font-weight: bold;
+#clear {
+	background-color: #ffffff;
 }
-.selection-box {
+#clear p {
+	color: #00a6d6;
+}
+.tv-option {
 	border-radius: 10px;
-	background-color: #222222;
-	height: 7.5em;
+	background-color: #00a6d6;
 	display: grid;
-	padding: 5px;
-	margin-top: 10px;
+	padding: 0px;
+	height: 100px;
+	margin-bottom: 15px;
 }
-.selection-box h3 {
+.tv-option p {
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: bold;
+	margin: auto;
+}
+.discount {
+	border-radius: 10px;
+	background-color: #00a6d6;
+	margin-top: 15px;
+	display: grid;
+	height: 100px;
+	margin: 5px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.discount p {
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: bold;
 	margin: auto;
 }
 .month-total {
-	margin-top: 100px;
-	margin: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	border-radius: 15px;
-	background-color: #222222;
-	height: 10em;
+	background-color: #00629b;
+	height: 100px;
 	display: grid;
-	padding: 5px;
 }
-.month-total h1 {
+.month-total p {
 	margin: auto;
 	font-weight: bolder;
+	font-size: 30px;
 }
 .tv-size {
 	border-radius: 15px;
-	height: 4em;
-	background-color: #222222;
+	height: 75px;
+	background-color: #00a6d6;
 	display: grid;
-	margin: 5px;
-	width: 100px;
+	width: 75px;
+	margin: 6px;
+	margin-bottom: 15px;
+
 }
-.tv-size h3 {
+.tv-size p {
 	margin: auto;
+	font-weight: bolder;
+	font-size: 30px;
 }
-.tv-count-group {
-	/*width: 80%;*/
+.include-internet {
+	border-radius: 15px;
+	height: 75px;
+	background-color: #00a6d6;
+	display: grid;
+	width: 75px;
+	margin: 10px;
+}
+.include-internet p {
+	margin: auto;
+	font-weight: bolder;
+	font-size: 30px;
 }
 .hide {
 	display: none;
 }
 .active {
-	background-color: #2222ee;
-	color: #222222
+	background-color: #003865;
 }
 .pricing {
 	margin-top: 20px;
@@ -61,6 +95,11 @@ h3	{
 }
 #uversePrograms {
 	margin-top: 10px;
+}
+.header {
+	border-bottom: 3px solid;
+	border-color: #a3a2a4;
+	margin-bottom: 15px;
 }
 /* Large devices (large desktops, 1200px and up) */
 

@@ -7,7 +7,7 @@ var internet = 0;
 var internetActive = 0;
 var autopay = 0;
 var unlimited = 0;
-var programList = [[40, 76], [45, 87], [50, 101], [60, 110], [65,120], [115, 173], [40, 70], [60, 98], [65, 114], [115, 139]]
+var programList = [[40, 76], [45, 87], [50, 101], [60, 110], [65,120], [115, 173], [40, 79], [60, 98], [65, 114], [115, 139]]
 
 
 
@@ -15,8 +15,13 @@ var programList = [[40, 76], [45, 87], [50, 101], [60, 110], [65,120], [115, 173
 function updatePrice () {
 	let newPromo = promo + perTv + unlimited + internet + autopay
 	let newBase = base + perTv + unlimited + internet
-	document.getElementById("promoPrice").innerHTML = newPromo;
-	document.getElementById("basePrice").innerHTML = newBase;
+	if (newPromo <= 0) {
+		document.getElementById("promoPrice").innerHTML = 0;
+		document.getElementById("basePrice").innerHTML = 0;
+	} else {
+		document.getElementById("promoPrice").innerHTML = newPromo;
+		document.getElementById("basePrice").innerHTML = newBase;
+	}
 };
 
 function updateProgramPricing() {
@@ -43,7 +48,7 @@ function updateTvSelection() {
 		$('#uFamily').removeClass('active');
 		$('#u200').removeClass('active');
 		$('#u300').removeClass('active');
-		$('#u400').removeClass('active');
+		$('#u450').removeClass('active');
 		$('#uversePrograms').removeClass('hide');
 		$('#dtvPrograms').addClass('hide');
 		promo = 0
@@ -56,10 +61,12 @@ function updateTv() {
 	if (dtv == 1) {
 		$('#dtv').addClass('active');
 		$('#uverse').removeClass('active');
+		numberOfTvs(1, '#1')
 		updateTvSelection();
 	} else {
 		$('#uverse').addClass('active');
 		$('#dtv').removeClass('active');
+		numberOfTvs(1, '#1')
 		updateTvSelection();
 	}
 };
@@ -75,7 +82,7 @@ function setProgram(prog, active) {
 	$('#uFamily').removeClass('active');
 	$('#u200').removeClass('active');
 	$('#u300').removeClass('active');
-	$('#u400').removeClass('active');
+	$('#u450').removeClass('active');
 	$(active).addClass('active');
 	update();
 }
@@ -163,11 +170,53 @@ function autopayDiscount() {
 	}
 };
 
+function clear() {
+	promo = 0;
+	base = 0;
+	perTv = 0;
+	dtv = 0;
+	program = 0;
+	internet = 0;
+	internetActive = 0;
+	autopay = 0;
+	unlimited = 0;
+	$('#select').removeClass('active');
+	$('#entertainment').removeClass('active');
+	$('#choice').removeClass('active');
+	$('#xtra').removeClass('active');
+	$('#ultimate').removeClass('active');
+	$('#premier').removeClass('active');
+	$('#dtvPrograms').removeClass('hide');
+	$('#uversePrograms').addClass('hide');
+	$('#1').addClass('active');
+	$('#2').removeClass('active');
+	$('#3').removeClass('active');
+	$('#4').removeClass('active');
+	$('#5').removeClass('active');
+	$('#6').removeClass('active');
+	$('#7').removeClass('active');
+	$('#8').removeClass('active');
+	$("#autopayDiscount").removeClass('active');
+	$("#plusDiscount").removeClass('active');
+	$('#internetThirty').removeClass('active');
+	$('#internetFifty').removeClass('active');
+	$('#internetSeventy').removeClass('active');
+	$('#includeInternet').removeClass('active');
+	$('#uverse').removeClass('active');
+	$('#dtv').removeClass('active');
+	$('#internetThirty').addClass('hide');
+	$('#internetFifty').addClass('hide');
+	$('#internetSeventy').addClass('hide');
+	updatePrice();
+}
 function update() {
 	updateProgramPricing();
 	updatePrice();
 }
 
+$("#clear").click(function() {
+	clear();
+});
 $("#plusDiscount").click(function() {
 	plusDiscount();
 });

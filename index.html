@@ -10,130 +10,170 @@
 </head>
 <body>
 	<div class="container">
-		<div class="row justify-content-center">
-			<div class="selection-group col-sm-4">
-				<div id="dtv" class="selection-box">
-					<h3>DTV</h3>
-				</div>
-				<div id="uverse" class="selection-box">
-					<h3>uVerse</h3>
-				</div>
-			</div>
-			<div class="selection-group col-sm-4">
-				<div id="includeInternet"	class="selection-box">
-					<h3>Include</h3>
-					<h3>Internet</h3>
-				</div>
-				<div class="row justify-content-center">
-					<div id="internetThirty"	class="selection-box col-sm hide">
-						<h3>$30</h3>
-					</div>
-					<div id="internetFifty" class="selection-box col-sm hide">
-						<h3>$50</h3>
-					</div>
-					<div id="internetSeventy"	class="selection-box col-sm hide">
-						<h3>$70</h3>
-					</div>
+
+		<!-- Pricing Area -->
+		<div class="row justify-content-center header">
+			<div class="col-sm-5">
+				<div class="month-total">
+					<p>Month's 1-12</p>
+					<p>$<span id="promoPrice">0</span></p>
 				</div>
 			</div>
-			<div class="selection-group col-sm-4">
-				<div id="plusDiscount"	class="selection-box">
-					<h3>$15 Discount</h3>
-				</div>
-				<div id="autopayDiscount" class="selection-box">
-					<h3>$5 Discount</h3>
+			<div class="col-sm-5">
+				<div class="month-total">
+					<p>Month's 13+</p>
+					<p>$<span id="basePrice">0</span></p>
 				</div>
 			</div>
 		</div>
 
-		<div class="row justify-content-center">
-			<div class="col-sm-12 text-center">
-				<h3># of TV's</h3>
+		<!-- Service Type -->
+		<div class="row justify-content-center header">
+			<div class="col-sm-4">
+				<div id="dtv" class="tv-option">
+					<p>DirecTV</p>
+				</div>
 			</div>
-			<div class="row tv-count-group justify-content-center">
-				<div id="1"	class="tv-size col-sm-3 active">
-					<h3>1</h3>
+			<div class="col-sm-4">
+				<div id="uverse" class="tv-option">
+					<p>U-verse</p>
 				</div>
-				<div id="2"	class="tv-size col-sm-3">
-					<h3>2</h3>
-				</div>
-				<div id="3"	class="tv-size col-sm-3">
-					<h3>3</h3>
-				</div>
-				<div id="4"	class="tv-size col-sm-3">
-					<h3>4</h3>
-				</div>
-				<div id="5"	class="tv-size col-sm-3">
-					<h3>5</h3>
-				</div>
-				<div id="6"	class="tv-size col-sm-3">
-					<h3>6</h3>
-				</div>
-				<div id="7"	class="tv-size col-sm-3">
-					<h3>7</h3>
-				</div>
-				<div id="8"	class="tv-size col-sm-3">
-					<h3>8</h3>
+			</div>
+			<div class="col-sm-4">
+				<div id="clear" class="tv-option">
+					<p>Reset</p>
 				</div>
 			</div>
 		</div>
+
+		<!-- TV Programs Area -->
 		<div id="dtvPrograms" class="row justify-content-center">
 			<div class="selection-group col-sm-4">
-				<div id="select" class="selection-box">
-					<h3>Select</h3>
+				<div id="select" class="tv-option">
+					<p>Select</p>
 				</div>
-				<div id="xtra" class="selection-box">
-					<h3>Xtra</h3>
-				</div>
-			</div>
-			<div class="selection-group col-sm-4">
-				<div id="entertainment" class="selection-box">
-					<h3>Entertainment</h3>
-				</div>
-				<div id="ultimate" class="selection-box">
-					<h3>Ultimate</h3>
+				<div id="xtra" class="tv-option">
+					<p>Xtra</p>
 				</div>
 			</div>
 			<div class="selection-group col-sm-4">
-				<div id="choice" class="selection-box">
-					<h3>Choice</h3>
+				<div id="entertainment" class="tv-option">
+					<p>Entertainment</p>
 				</div>
-				<div id="premier" class="selection-box">
-					<h3>Premier</h3>
+				<div id="ultimate" class="tv-option">
+					<p>Ultimate</p>
+				</div>
+			</div>
+			<div class="selection-group col-sm-4">
+				<div id="choice" class="tv-option">
+					<p>Choice</p>
+				</div>
+				<div id="premier" class="tv-option">
+					<p>Premier</p>
 				</div>
 			</div>
 		</div>
+		<!-- uverse Section -->
 		<div id="uversePrograms" class="row justify-content-center hide">
 			<div class="selection-group col-sm-6">
-				<div id="uFamily" class="selection-box">
-					<h3>uFamily</h3>
+				<div id="uFamily" class="tv-option">
+					<p>uFamily</p>
 				</div>
-				<div id="u300" class="selection-box">
-					<h3>u300</h3>
+				<div id="u300" class="tv-option">
+					<p>u300</p>
 				</div>
 			</div>
 			<div class="selection-group col-sm-6">
-				<div id="u200" class="selection-box">
-					<h3>u200</h3>
+				<div id="u200" class="tv-option">
+					<p>u200</p>
 				</div>
-				<div id="u450" class="selection-box">
-					<h3>u450</h3>
+				<div id="u450" class="tv-option">
+					<p>u450</p>
 				</div>
 			</div>
 		</div>
-		<div class="pricing row justify-content-center">
-	    <div class="month-total col-5">
-	      <h1>Month's 1-12</h1>
-	      <h1>$<span id="promoPrice">0</span></h1>
-	    </div>
-	    <div class="month-total col-5">
-				<h1>Month's 13+</h1>
-	      <h1>$<span id="basePrice">0</span></h1>
-	    </div>
+
+		<!-- Number of TV's -->
+		<div class="row justify-content-center header">
+			<div class="">
+				<div id="1"	class="tv-size active">
+					<p>1</p>
+				</div>
+			</div>
+			<div class="">
+				<div id="2"	class="tv-size">
+					<p>2</p>
+				</div>
+			</div>
+			<div class="">
+				<div id="3"	class="tv-size">
+					<p>3</p>
+				</div>
+			</div>
+			<div class="">
+				<div id="4"	class="tv-size">
+					<p>4</p>
+				</div>
+			</div>
+			<div class="">
+				<div id="5"	class="tv-size">
+					<p>5</p>
+				</div>
+			</div>
+			<div class="">
+				<div id="6"	class="tv-size">
+					<p>6</p>
+				</div>
+			</div>
+			<div class="">
+				<div id="7"	class="tv-size">
+					<p>7</p>
+				</div>
+			</div>
+			<div class="">
+				<div id="8"	class="tv-size">
+					<p>8</p>
+				</div>
+			</div>
 		</div>
 
+		<div class="row justify-content-center">
+			<div id="plusDiscount"	class="col-sm-5 discount">
+				<p>$15 Unlimited</p>
+				<p>Plus Discount</p>
+			</div>
+			<div id="autopayDiscount" class="col-sm-5 discount">
+				<p>$5 Autopay</p>
+				<p>Discount</p>
+			</div>
+		</div>
 
-
+		<!-- Internet Section -->
+		<div class="row justify-content-center">
+			<div id="includeInternet"	class="include-internet col-sm-12">
+				<p>Include Internet</p>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-sm-4">
+				<div id="internetThirty"	class="tv-option hide">
+					<p>upto 50mb</p>
+					<p>$30</p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div id="internetFifty" class="tv-option hide">
+					<p>upto 100mb</p>
+					<p>$50</p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div id="internetSeventy"	class="tv-option hide">
+					<p>upto 1000mb</p>
+					<p>$70</p>
+				</div>
+			</div>
+		</div>
 
 	</div> <!--  container end -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
