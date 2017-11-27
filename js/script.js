@@ -1,7 +1,7 @@
-var promo = 40;
-var base = 76;
+var promo = 0;
+var base = 0;
 var perTv = 0;
-var dtv = 1;
+var dtv = 0;
 var program = 0;
 var internet = 0;
 var internetActive = 0;
@@ -31,7 +31,6 @@ function updateProgramPricing() {
 
 function updateTvSelection() {
 	if (dtv == 1) {
-		console.log("DTV ran");
 		$('#select').removeClass('active');
 		$('#entertainment').removeClass('active');
 		$('#choice').removeClass('active');
@@ -39,18 +38,21 @@ function updateTvSelection() {
 		$('#ultimate').removeClass('active');
 		$('#premier').removeClass('active');
 		$('#dtvPrograms').removeClass('hide');
+		$('#dtvProgram').removeClass('hide');
 		$('#uversePrograms').addClass('hide');
+		$('#uverseProgram').addClass('hide');
 		promo = 0
 		base = 0
 		updatePrice();
 	} else {
-		console.log("uverse ran");
 		$('#uFamily').removeClass('active');
 		$('#u200').removeClass('active');
 		$('#u300').removeClass('active');
 		$('#u450').removeClass('active');
 		$('#uversePrograms').removeClass('hide');
+		$('#uverseProgram').removeClass('hide');
 		$('#dtvPrograms').addClass('hide');
+		$('#dtvProgram').addClass('hide');
 		promo = 0
 		base = 0
 		updatePrice();
@@ -110,7 +112,6 @@ function setTv(tv) {
 	if (tv == 'dtv') {
 		dtv = 1;
 	} else {
-		console.log("SetTV uverse ran");
 		dtv = 0
 	}
 	updateTv();
@@ -187,7 +188,9 @@ function clear() {
 	$('#ultimate').removeClass('active');
 	$('#premier').removeClass('active');
 	$('#dtvPrograms').removeClass('hide');
+	$('#dtvProgram').removeClass('hide');
 	$('#uversePrograms').addClass('hide');
+	$('#uverseProgram').addClass('hide');
 	$('#1').addClass('active');
 	$('#2').removeClass('active');
 	$('#3').removeClass('active');
