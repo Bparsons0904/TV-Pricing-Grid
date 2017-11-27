@@ -1,42 +1,83 @@
+/*Light Blue - 00a6d6
+Med Blue - 00629b
+Dark Blue - 003865
+Select Red - EF4222 A2271F
+Entertainment Green - 549734 0F6A31
+Choice Orange - F28032 D46326
+Xtra Purple - 756FA5 514E9A
+Ultimate Blue - 00ACED
+Premier Pink - E60288*/
+
+
 body {
 	margin: 0;
 	width: 100%;
 	background-color: #000000;
-	color: #ffffff;
+	color: #00a6d6;
 	font-family: 'Quicksand', sans-serif;
 }
 #clear {
-	background-color: #ffffff;
+	background-color: #00629b;
 }
 #clear p {
-	color: #00a6d6;
+	color: #ffffff;
+}
+.month-total {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	background-color: #00a6d6;
+	height: 100px;
+}
+.month-total p {
+	margin: auto;
+	font-weight: bolder;
+	font-size: 30px;
+	text-align: center;
+	color: #ffffff;
 }
 .tv-option {
 	border-radius: 10px;
-	background-color: #00a6d6;
+	background-color: #ffffff;
 	padding: 0px;
 	height: 100px;
 	margin-bottom: 15px;
 }
 .tv-option p {
+	color: #00a6d6;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 25px;
+}
+.program-option {
+	border-radius: 10px;
+	padding: 0px;
+	height: 100px;
+	margin-bottom: 15px;
+}
+.program-option p {
 	color: #ffffff;
 	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
 	padding-top: 25px;
 }
-.internet-price {
-	border-radius: 10px;
-	background-color: #00a6d6;
-	height: 100px;
-	margin-bottom: 15px;
+.tv-size {
+	border-radius: 15px;
+	height: 75px;
+	background-color: #ffffff;
+	width: 75px;
+	margin: 6px;
+	margin-bottom: 20px;
 }
-.internet-price p {
-	color: #ffffff;
-	font-size: 30px;
-	font-weight: bold;
-	text-align: center;
+.tv-size p {
 	margin: auto;
+	padding-top: 15px;
+	font-weight: bolder;
+	font-size: 30px;
+	text-align: center;
+	color: #00a6d6;
 }
 .discount {
 	border-radius: 10px;
@@ -54,39 +95,10 @@ body {
 	margin: auto;
 	text-align: center;
 }
-.month-total {
-	margin-top: 15px;
-	margin-bottom: 15px;
-	border-radius: 15px;
-	background-color: #00629b;
-	height: 100px;
-}
-.month-total p {
-	margin: auto;
-	font-weight: bolder;
-	font-size: 30px;
-	text-align: center;
-}
-.tv-size {
-	border-radius: 15px;
-	height: 75px;
-	background-color: #00a6d6;
-	width: 75px;
-	margin: 6px;
-	margin-bottom: 15px;
-
-}
-.tv-size p {
-	margin: auto;
-	padding-top: 15px;
-	font-weight: bolder;
-	font-size: 30px;
-	text-align: center;
-}
 .include-internet {
 	border-radius: 15px;
 	height: 75px;
-	background-color: #00a6d6;
+	background-color: #ffffff;
 	width: 75px;
 	margin: 10px;
 }
@@ -96,12 +108,30 @@ body {
 	font-size: 30px;
 	text-align: center;
 	padding-top: 10px;
+	color: #00a6d6;
+}
+.internet-price {
+	border-radius: 10px;
+	background-color: #ffffff;
+	height: 100px;
+	margin-bottom: 15px;
+}
+.internet-price p {
+	color: #00a6d6;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin: auto;
 }
 .hide {
 	display: none;
 }
 .active {
 	background-color: #003865;
+	box-shadow: 0px 0px 10px 3px #ffffff;
+}
+.active p {
+	color: #ffffff;
 }
 .pricing {
 	margin-top: 20px;
@@ -112,9 +142,39 @@ body {
 #uversePrograms {
 	margin-top: 10px;
 }
+#select {
+	background-color: #EF4222;
+}
+#uFamily {
+	background-color: #EF4222;
+}
+#entertainment {
+	background-color: #549734;
+}
+#choice {
+	background-color: #F28032;
+}
+#xtra {
+	background-color: #756FA5;
+}
+#u200 {
+	background-color: #756FA5;
+}
+#ultimate {
+	background-color: #00ACED;
+}
+#u300 {
+	background-color: #00ACED;
+}
+#premier {
+	background-color: #E60288;
+}
+#u450 {
+	background-color: #E60288;
+}
 .header {
 	border-bottom: 3px solid;
-	border-color: #a3a2a4;
+	border-color: #00a6d6;
 	margin-bottom: 15px;
 }
 /* Large devices (large desktops, 1200px and up) */
