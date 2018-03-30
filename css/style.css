@@ -112,11 +112,17 @@ body {
 	padding-top: 10px;
 	color: #00a6d6;
 }
+
+.update {
+	color: mediumspringgreen;
+	font-size: 20px;
+}
 .internet-price {
 	border-radius: 10px;
 	background-color: #ffffff;
 	height: 100px;
 	margin-bottom: 15px;
+	padding-top: 25px;
 }
 .internet-price p {
 	color: #00a6d6;

@@ -4,6 +4,7 @@ var perTv = 0;
 var dtv = 0;
 var program = 0;
 var internet = 0;
+var internetStandAlone = 0;
 var internetActive = 0;
 var autopay = 0;
 var unlimited = 0;
@@ -13,8 +14,16 @@ var programList = [[40, 78], [45, 90], [50, 105], [60, 117], [65,128], [115, 181
 
 
 function updatePrice () {
-	let newPromo = promo + perTv + unlimited + internet + autopay
-	let newBase = base + perTv + unlimited + internet
+	let newPromo = 0;
+	let newBase = 0;
+	if (internetStandAlone > 0 && (autopay < 0 || unlimited < 0)) {
+		newPromo = promo + perTv + internet;
+		newBase = base + perTv + internet + internetStandAlone;
+	} else {
+		newPromo = promo + perTv + unlimited + internet + autopay;
+		newBase = base + perTv + unlimited + internet + internetStandAlone;
+	};
+	
 	if (newPromo <= 0) {
 		document.getElementById("promoPrice").innerHTML = 0;
 		document.getElementById("basePrice").innerHTML = 0;
@@ -74,6 +83,11 @@ function updateTv() {
 };
 
 function setProgram(prog, active) {
+	if(internetStandAlone > 0) {
+		internetStandAlone = 0;
+		internet -= 10;
+	}
+	
 	program = prog;
 	$('#select').removeClass('active');
 	$('#entertainment').removeClass('active');
@@ -139,10 +153,17 @@ function includeInternet() {
 };
 
 function internetPriceSelection(active, price) {
+	internetStandAlone = 0;
 	$('#internetThirty').removeClass('active');
 	$('#internetFifty').removeClass('active');
 	$('#internetSeventy').removeClass('active');
 	$(active).addClass('active');
+	if(base == 0) {
+		price += 10;
+		internetStandAlone += 10;
+	} else {
+		internet = price;
+	};
 	internet = price;
 	updatePrice();
 }
